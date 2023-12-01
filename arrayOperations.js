@@ -10,9 +10,15 @@ addElement(initialList, 6);
 console.log(initialList); 
 
 // Function to remove an element from the list
+
 function removeElement(list, element) {
-  // Your code here
-}
+  const indexOfElement =list.findIndex(x=>x===element)
+   list.splice(indexOfElement,1);
+   return list;
+ 
+ }
+ console.log(removeElement(initialList,4))
+
 
 // Function to update an element in the list
 function updateElement(list, index, newValue) {
